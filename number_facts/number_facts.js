@@ -1,5 +1,5 @@
 "use strict";
-
+//TODO: axios changes json to ob; | name factjson resp
 async function getFact(number) {
     const factJson = await axios.get(`http://numbersapi.com/${number}/math?json`);
     const text = factJson.data.text;
